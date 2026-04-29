@@ -1,0 +1,125 @@
+class _TwoPlayerLayoutState extends State<TwoPlayerLayout>
+    with SingleTickerProviderStateMixin {
+  int topLife = 0;
+  int bottomLife = 0;
+  int topLeaderId = 287;
+  int bottomLeaderId = 302;
+  int topBaseId = 60;
+  int bottomBaseId = 60;
+  List<String> playerNames = ["Player 1", "Player 2"];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadPlayerPreferences();
+  }
+
+  Future<void> _loadPlayerPreferences() async {
+    // Load player 0 (top)
+    final topBase = await PreferencesHelper.getPlayerBase(0);
+    final topLeader = await PreferencesHelper.getPlayerLeader(0);
+    final topName = await PreferencesHelper.getPlayerName(0);
+    
+    // Load player 1 (bottom)
+    final bottomBase = await PreferencesHelper.getPlayerBase(1);
+    final bottomLeader = await PreferencesHelper.getPlayerLeader(1);
+    final bottomName = await PreferencesHelper.getPlayerName(1);
+    
+    setState(() {
+      if (topBase != null) topBaseId = topBase;
+      if (topLeader != null) topLeaderId = topLeader;
+      if (topName != null) playerNames[0] = topName;
+      
+      if (bottomBase != null) bottomBaseId = bottomBase;
+      if (bottomLeader != null) bottomLeaderId = bottomLeader;
+      if (bottomName != null) playerNames[1] = bottomName;
+    });
+  }
+
+  // Update the onBaseChange callback to also save
+  // In your PlayerCounter widgets:
+  onBaseChange: (baseId) {
+    setState(() => topBaseId = baseId);
+    PreferencesHelper.savePlayerData(
+      playerIndex: 0,
+      baseId: baseId,
+      leaderId: topLeaderId,
+      playerName: playerNames[0],
+    );
+  },
+  
+  onLeaderChange: (leaderId) {
+    setState(() => topLeaderId = leaderId);
+    PreferencesHelper.savePlayerData(
+      playerIndex: 0,
+      baseId: topBaseId,
+      leaderId: leaderId,
+      playerName: playerNames[0],
+    );
+  },
+  
+  onNameChange: (newName) {
+    setState(() => playerNames[0] = newName);
+    PreferencesHelper.savePlayerData(
+      playerIndex: 0,
+      baseId: topBaseId,
+      leaderId: topLeaderId,
+      playerName: newName,
+    );
+  },
+  
+  // Repeat for bottom player (playerIndex: 1)
+
+
+
+
+
+
+
+
+
+
+
+
+  Expanded(
+  flex: 1,
+  child: PlayerCounter(
+    isTopPlayer: false,
+    baseId: bottomBaseId,
+    leaderId: bottomLeaderId,
+    life: bottomLife,
+    playerName: playerNames[1],
+    onNameChange: (newName) {
+      setState(() => playerNames[1] = newName);
+      PreferencesHelper.savePlayerData(
+        playerIndex: 1,
+        baseId: bottomBaseId,
+        leaderId: bottomLeaderId,
+        playerName: newName,
+      );
+    },
+    onBaseChange: (baseId) {
+      setState(() => bottomBaseId = baseId);
+      PreferencesHelper.savePlayerData(
+        playerIndex: 1,
+        baseId: baseId,
+        leaderId: bottomLeaderId,
+        playerName: playerNames[1],  // ← Changed from playerNames[0]
+      );
+    },
+    onLeaderChange: (leaderId) {
+      setState(() => bottomLeaderId = leaderId);
+      PreferencesHelper.savePlayerData(
+        playerIndex: 1,
+        baseId: bottomBaseId,
+        leaderId: leaderId,
+        playerName: playerNames[1],  // ← Changed from playerNames[0]
+      );
+    },
+    onLifeChange: (value) => setState(() => bottomLife = value),
+    initiativePlayer: widget.initiativePlayer,
+    onInitiativeClaimed: widget.onInitiativeClaimed,
+    playerId: 1,
+    onPlayerDefeated: _handlePlayerDefeated,
+  ),
+),

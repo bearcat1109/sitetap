@@ -1,0 +1,1 @@
+ /Users/gabrielberres/Documents/Code/SiteTap/.dart_tool/flutter_build/7e320299e218fb78f34b8e5293508e07/native_assets.json: 
