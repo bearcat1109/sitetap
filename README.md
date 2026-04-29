@@ -1,3 +1,2 @@
-# Flutter port of BaseTap
-
-This is the repo for the Flutter/Dart port of BaseTap, the Star Wars Unlimited life tracking app! This flutter version is cross-platform and will be where the development is supported going forward.
+# SiteTap for Sorcery: Contested Realms
+This is the repo for SiteTap, ported from the BaseTap flutter project, for Sorcery: Contested Realms.
