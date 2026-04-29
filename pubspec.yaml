@@ -23,7 +23,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/avatars/
-    - assets/background.webp
+    - assets/sorcererbackground.jpg
 
 flutter_launcher_icons:
   android: true

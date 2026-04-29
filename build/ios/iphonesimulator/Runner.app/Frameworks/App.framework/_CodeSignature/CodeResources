@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		p0hpm5MzIrIyVd0NGgWdmi2lgKU=
+		4Oe/xje6li2yJyQRXcayyriwID8=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -36,6 +36,78 @@
 		<data>
 		avcbiK/AJLmv2jVYCcUrbzsJrZ4=
 		</data>
+		<key>flutter_assets/assets/images/avatars/animist.webp</key>
+		<data>
+		HwQiW4dkZI6c5v59N0ged+791J8=
+		</data>
+		<key>flutter_assets/assets/images/avatars/archimago.webp</key>
+		<data>
+		x3chPjHgnNVfESyx3L88c9fQ7dE=
+		</data>
+		<key>flutter_assets/assets/images/avatars/avatar-of-air.webp</key>
+		<data>
+		7yNedTAwdR7x0QM4VqauBIxBg7w=
+		</data>
+		<key>flutter_assets/assets/images/avatars/avatar-of-earth.webp</key>
+		<data>
+		TJbABkljdBaAEZW2rIubi8u50r4=
+		</data>
+		<key>flutter_assets/assets/images/avatars/avatar-of-fire.webp</key>
+		<data>
+		l3zUII1hyxo6C9m3P9hL/KTYU1w=
+		</data>
+		<key>flutter_assets/assets/images/avatars/avatar-of-water.webp</key>
+		<data>
+		7UGXyBl/FC7hKnxxorohlzg5fOc=
+		</data>
+		<key>flutter_assets/assets/images/avatars/battlemage.webp</key>
+		<data>
+		rPvyoFPRBLe3uou6rOZJmpfu6So=
+		</data>
+		<key>flutter_assets/assets/images/avatars/bladedancer.webp</key>
+		<data>
+		gtfe6msFzpiZseJCCoPgYj5xbZQ=
+		</data>
+		<key>flutter_assets/assets/images/avatars/corruptor.webp</key>
+		<data>
+		xwTUPBU1ou8N/O5a32vv3xGZkm0=
+		</data>
+		<key>flutter_assets/assets/images/avatars/deathspeaker.webp</key>
+		<data>
+		L7brcL0lV27DrF5NwmJxwLjEAWM=
+		</data>
+		<key>flutter_assets/assets/images/avatars/dragonlord.webp</key>
+		<data>
+		iRqhJeaIbujWzpXIXZ/9wuwnReo=
+		</data>
+		<key>flutter_assets/assets/images/avatars/druid.webp</key>
+		<data>
+		WdzOGqyRf7aSo0TGIETuzOTMYG8=
+		</data>
+		<key>flutter_assets/assets/images/avatars/duplicator.webp</key>
+		<data>
+		ehw8FkPFyxYIAcIBne+Lu0YbKxI=
+		</data>
+		<key>flutter_assets/assets/images/avatars/elementalist.webp</key>
+		<data>
+		/Jk9DzXb1NUC9YpZZJ1Ztnxy7Wo=
+		</data>
+		<key>flutter_assets/assets/images/avatars/enchantress.webp</key>
+		<data>
+		iH5Oo/h1Qq1ApKR8K/RvS9Tc6KA=
+		</data>
+		<key>flutter_assets/assets/images/avatars/flamecaller.webp</key>
+		<data>
+		Wc9iQn4G6Bom1EmUBHacqlQktz8=
+		</data>
+		<key>flutter_assets/assets/images/avatars/geomancer.webp</key>
+		<data>
+		ettBQx6jC5Raqb+mSEaUsI7A2Kw=
+		</data>
+		<key>flutter_assets/assets/images/avatars/harbinger.webp</key>
+		<data>
+		HUjEgjZH928lVqR/gY+z8JsQlWU=
+		</data>
 		<key>flutter_assets/assets/images/avatars/ic_launcher_background.xml</key>
 		<data>
 		vmuFQcgvhvA5XKdQiFA4wqhvUPI=
@@ -44,17 +116,73 @@
 		<data>
 		H/Kz2XwUftzGQxr089dDch5KD4s=
 		</data>
+		<key>flutter_assets/assets/images/avatars/imposter.webp</key>
+		<data>
+		g1o4t658M8SPMqz+vQoT1+VaH8U=
+		</data>
+		<key>flutter_assets/assets/images/avatars/interrogator.webp</key>
+		<data>
+		JBli9r8a8+clzabaSK8AVEizE30=
+		</data>
+		<key>flutter_assets/assets/images/avatars/ironclad.webp</key>
+		<data>
+		INoid9tZTXNKSZ8CAXa2iuoM0Wc=
+		</data>
+		<key>flutter_assets/assets/images/avatars/magician.webp</key>
+		<data>
+		/40ffvNOuRmOy3d8L8TeqnzBS8w=
+		</data>
+		<key>flutter_assets/assets/images/avatars/necromancer.webp</key>
+		<data>
+		AzWVsSIKdyaFs2ylONQm0eZp4uk=
+		</data>
+		<key>flutter_assets/assets/images/avatars/pathfinder.webp</key>
+		<data>
+		Ja5MtaPtBc5LOTBpa6D4QJMgkio=
+		</data>
+		<key>flutter_assets/assets/images/avatars/persecutor.webp</key>
+		<data>
+		ILCB5Z0gbuoah7M5w272pAoZaP8=
+		</data>
+		<key>flutter_assets/assets/images/avatars/realm-eater.webp</key>
+		<data>
+		C6Hth3Iz2Oxzaqy2xxEwpHXyixU=
+		</data>
+		<key>flutter_assets/assets/images/avatars/savior.webp</key>
+		<data>
+		+9l35mZ5AyrE1H1aYbt5NzUN/vQ=
+		</data>
+		<key>flutter_assets/assets/images/avatars/seer.webp</key>
+		<data>
+		Z+ymZVFll4Nsdgy0j49uoxPhCLQ=
+		</data>
 		<key>flutter_assets/assets/images/avatars/sorcerer.webp</key>
 		<data>
 		TzHPsPqKhdV5xZdNnr48PnDwxis=
+		</data>
+		<key>flutter_assets/assets/images/avatars/sparkmage.webp</key>
+		<data>
+		uSCet/F4oT5fMsYVAR+hAeMYBT8=
 		</data>
 		<key>flutter_assets/assets/images/avatars/spellslinger.webp</key>
 		<data>
 		40wHco0ITaUZkdizpza2Lt7YCH4=
 		</data>
+		<key>flutter_assets/assets/images/avatars/templar.webp</key>
+		<data>
+		m5rS2S1UG/TPTuTSqIvGxeKXORk=
+		</data>
 		<key>flutter_assets/assets/images/avatars/user.webp</key>
 		<data>
 		5kdULwKLReJTnpLYl6xbvTZKlBM=
+		</data>
+		<key>flutter_assets/assets/images/avatars/waveshaper.webp</key>
+		<data>
+		yu7pwQq7WN7u3ADRzCzufP0R0xA=
+		</data>
+		<key>flutter_assets/assets/images/avatars/witch.webp</key>
+		<data>
+		/5/mlP8Lz5ZlX2qjt2hZ0WMfCEo=
 		</data>
 		<key>flutter_assets/assets/images/leaders/.DS_Store</key>
 		<data>
@@ -1244,6 +1372,10 @@
 		<data>
 		8FBlHX7u4QKNkH+za16HtwoOQUk=
 		</data>
+		<key>flutter_assets/assets/sorcererbackground.jpg</key>
+		<data>
+		eh+FKFVFrSjUIfezzyyOv6DedT4=
+		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
 		/CUoTuPQqqdexfyOT9lpJhV+2MQ=
@@ -1254,7 +1386,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		ez8Zw0t4f236Nz8ckDSAhngzXeQ=
+		6eVopCy9rV+muvmY2kso8oTrDQk=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -1279,7 +1411,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3oY+oNxRQy/HetrH7n9vb2cz5vjtDfKSftna1RIHU1g=
+			qdWbld/cDPOp/YHMJ1BgqnkpZu7QGjUgOR0kBzQSb/M=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -1317,6 +1449,132 @@
 			rcvw9FhXbV3doiyptYgCHUAghYeeAyPBPgARqvLfVHo=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/avatars/animist.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z+a+x+I96qJnH9E8ouW/5T57rCVSzndTLU/A4rC1t48=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/archimago.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1YsdW0HjR3PAFZIBifemIVk/EWDuS91cp6nLVz2oS0Y=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/avatar-of-air.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tTvOWX+Rd5yBV/+4VjbQvGlQeeNNXQYsl5dWHYqkEM8=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/avatar-of-earth.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zYmNyKEhqyPH3T0z4jRO0OlTaM1+P6+Zd3LVJheO0i8=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/avatar-of-fire.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oWYBvKXvSPfv/uO0sQ2yjjkfOsEA6JeeYNgQnkUuh+o=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/avatar-of-water.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W2zmxoBGYVsuU0uJO1l1c6ucFv3Rgq0+EWp85IA/ev4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/battlemage.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NSZud6kUIZkrf9CGTAia2/d0tU4oJuXt7KhPToO00fU=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/bladedancer.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ypEkZIMCOteL80J0QthEGmGjVZdbHhfceA5+8v5VDSo=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/corruptor.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4jbvD0WiAORISSKINl8VZPAjg8Fe4VZu7X+u2M5lNdM=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/deathspeaker.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LU79hjQiM3iUTqWMGe80N/uHLiA3IA97n24zbFZ/31k=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/dragonlord.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			40rPv1Mzl7bn1L+17UnTQb9HkCnk/E3CVvvR6Nc8QH0=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/druid.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ne6rREn/ZCl7tcS6VbhqfB1y9K64N4hynBsh2Brjky0=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/duplicator.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			icX+Re6oO844M+D0VrYkrt8lgedjcxUz+JUGHPHlafA=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/elementalist.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			92aHc58GuSIaSu3QQ5IqaYo4/GhDLaxUbhZnWUBePl4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/enchantress.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pS2pb4eq8PJvsW4wsG8AzzAUxffchVdpHsUjqfU5MIA=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/flamecaller.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YbHeEQbt/YfZVacwzgw+HAAb4kfizUQIKyBjBZrcEPg=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/geomancer.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			54OUM/1kux/pGwM8NwFpkDmpZkARguOFmG4X2KHyjec=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/harbinger.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MXWVES+CzYjnbcS1ZEhN9nFCCVvJfZxq25OfMIosDkQ=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/avatars/ic_launcher_background.xml</key>
 		<dict>
 			<key>hash2</key>
@@ -1331,11 +1589,88 @@
 			AdGmpsEjTrf+Jw0JfrKD1yucla5RGIhvG2VzqtKA8fc=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/avatars/imposter.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zhvgxB+Ag/nQT+c3eorObr52HivAsvRTOcylMJ64fSo=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/interrogator.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TxUOULcTfZyZCRYBXM05+ZtTXs9DgqSDcFTGRvHCito=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/ironclad.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			au7s8Yg+YhRmUAtok+8WSo21e7mUq4S8u85pHjJcfyc=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/magician.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3QDwOsK0UtgO2s7+syVcqITLVDkeRyOrb7Pk+iBmN/A=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/necromancer.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zb8YBfOXc/vvcBu59xGeP5vEwcfOmTTy7/Y6JOlF3+s=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/pathfinder.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HG3E1sBssxfsuzCZlgcwQHrgtyFNn4N/YR3sVECSYGg=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/persecutor.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VcxWrYc2juCwIVwUSf0Vgvx7HR2xV2KL7sVQ0Vb65a4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/realm-eater.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sz0Sm9C+81UofP3PKZ4Rq8GVL+wyWHB46j8tjJHGO+U=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/savior.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oWOvHO1Ih0+8hoOqSCHCfxgDkPeMaCfWjdTUDX6WZIU=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/seer.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fh1sMveyut5yNXUSgUoXu/y2eYeHkHi8KzhyPOkPZK8=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/avatars/sorcerer.webp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			QUmp0FtQCkWBl79WA9eAf6edGXOc55iKjV7paFYmzss=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/sparkmage.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ou6U/yKvn+SDsR9gdRZFmJNKjNvNic/F3bC9V+THJ1s=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/avatars/spellslinger.webp</key>
@@ -1345,11 +1680,32 @@
 			BCqNV29Ip26ptGRYADQ8PVJVhFyI/ji4BsVLxH9Xx9M=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/avatars/templar.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gklbqNFvsB92nCV8ZrVZrSqLeuGTIcXu4rsYk1ZPZz8=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/avatars/user.webp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			gL7Xy1cNeaGqlaHg1TQxI1WRs4jHQHFoKwXgd7auuF8=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/waveshaper.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hYvzoO7CGG4V2WjAsihIkAp+krOVMbD1AI09wzJALeo=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/avatars/witch.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MDBe2s1sjkEJncPuilWUlhIIcuquSE34Fy8IpoOBsiU=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/leaders/admiral_ackbar_its_a_trap.webp</key>
@@ -3424,6 +3780,13 @@
 			nmaka+SqEjw1H7lU+5xEZhXsPX2LbBhZ8kmkEhp/Ixk=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/sorcererbackground.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LtDTFNh0fS65DbisQ4GDaWttdnBbM0A+N6Pmra+1Yag=
+			</data>
+		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<dict>
 			<key>hash2</key>
@@ -3442,7 +3805,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qcRdGKmgWGgAhFnw+w4e0ZAAE49+ckHx8PYUAQ8b66E=
+			SDOQQLYHtW9MrX0+aBVqFqrTrnFSY0bchYmHvFbUVSc=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
