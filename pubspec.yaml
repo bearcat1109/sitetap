@@ -26,6 +26,7 @@ flutter:
   assets:
     - assets/images/avatars/
     - assets/sorcererbackground.jpg
+    - assets/orb.gif
 
 flutter_launcher_icons:
   android: true

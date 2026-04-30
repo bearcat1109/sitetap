@@ -85,5 +85,5 @@ final avatars = [
     const Avatar(id: 32, name: "Avatar of Air", imagePath: "assets/images/avatars/avatar-of-air.webp"),
     const Avatar(id: 33, name: "Archimago", imagePath: "assets/images/avatars/archimago.webp"),
     const Avatar(id: 34, name: "Animist", imagePath: "assets/images/avatars/animist.webp"),
-    
+    const Avatar(id:35 , name: "Who up pondering they orb?", imagePath: "assets/orb.gif"),
 ];

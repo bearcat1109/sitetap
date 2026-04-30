@@ -45,6 +45,13 @@
       ]
     },
     {
+      "name": "font_awesome_flutter",
+      "version": "10.12.0",
+      "dependencies": [
+        "flutter"
+      ]
+    },
+    {
       "name": "google_fonts",
       "version": "6.3.3",
       "dependencies": [
@@ -650,13 +657,6 @@
         "collection",
         "meta",
         "pub_semver"
-      ]
-    },
-    {
-      "name": "font_awesome_flutter",
-      "version": "10.12.0",
-      "dependencies": [
-        "flutter"
       ]
     }
   ],

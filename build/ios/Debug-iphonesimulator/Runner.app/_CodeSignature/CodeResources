@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		e6lxiRI9chva1Uldqls+0Hj6rMg=
+		cuAz6tCELKq+1n6Y7TY9pbMce3U=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		ziOZpck4e5I7Z0lwIhRiDYdvnng=
+		zvbzO35m/ulPQSeqil7eZzaREWs=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		QwUtJMc1U/pw4q1HjcqAlMUi1IM=
+		M6/PzQUME6mdatarVn8b4Ylu+s0=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -1408,6 +1408,10 @@
 		<data>
 		8FBlHX7u4QKNkH+za16HtwoOQUk=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/orb.gif</key>
+		<data>
+		bd+slfOOIPUS4o9tdOrqgFs1pr4=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/sorcererbackground.jpg</key>
 		<data>
 		eh+FKFVFrSjUIfezzyyOv6DedT4=
@@ -1422,7 +1426,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		P+365aHt63oWlaMqvvxxKHksgPs=
+		HYev/m5hGXNUY3/sUR77vnvzszY=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -1586,7 +1590,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4N1eklciV5IXor6JdWm/OIp67qQ=
+		wFPas4P++jTgDJQke26QmnB8Ngg=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -1677,7 +1681,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mjEvCg9+QWPij+5TopbnBrdjEeSctSn2HY+73Zy3jBI=
+			hkkmxOuPAqn7/+oCfhw3KdJOpYGSxXuA9gQxLxNUoTQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -1691,14 +1695,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GulrSOV7xiVPzEwkiZ6EmWp6dG7T1k8bx59PmomsH+k=
+			ynGXxwLMzHvl/QfLzV/d86ILyF5BUwO8NqbWt6KZ2pc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			knbGccK1N+Ca0H+GF+YMYpv5LIqqqKuabXloERTfI4A=
+			DMTEb9qd2lbQlXENvmen7GNgy1tJW0NNmygODDU8Eaw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -4060,6 +4064,13 @@
 			nmaka+SqEjw1H7lU+5xEZhXsPX2LbBhZ8kmkEhp/Ixk=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/orb.gif</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			avJOs9oEewGwb8BrVFtAV9RUfxuvwEfAuYTyfG4YrWA=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/sorcererbackground.jpg</key>
 		<dict>
 			<key>hash2</key>
@@ -4085,7 +4096,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cez/VOOPHtVOEcg4gKjvFmY0oiC6zUzgLrcw5dXd7GY=
+			IXa1wTuW4GBoT5wku4yo0w9baRc86gSrwDITS2ygF3k=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

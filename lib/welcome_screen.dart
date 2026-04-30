@@ -52,7 +52,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       child: Stack(
         children: [
           Image.asset(
-            'assets/sorcererbackground.jpg',
+            'assets/orb.gif',
             fit: BoxFit.cover,
             width: double.infinity,
             height: double.infinity,
