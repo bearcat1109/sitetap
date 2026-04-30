@@ -348,6 +348,11 @@ class _ThreePlayerLayoutState extends State<ThreePlayerLayout> {
             onPressed: () => setState(() => lives = [20, 20, 20])),
           IconButton(icon: const Icon(Icons.people, color: Colors.white), 
             onPressed: widget.onShowPlayerCount),
+          IconButton(icon: const Icon(Icons.info, color: Colors.white), 
+            onPressed: () => showDialog(
+                    context: context,
+                    builder: (context) => InfoDialog(onDismissRequest: () => Navigator.pop(context)),
+                  ),),
         ],
       ),
     );
