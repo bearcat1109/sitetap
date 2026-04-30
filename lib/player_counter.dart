@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'models.dart';
 import 'dialogs.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PlayerCounter extends StatefulWidget {
   final bool isTopPlayer;
@@ -201,7 +202,7 @@ class _PlayerCounterState extends State<PlayerCounter> with TickerProviderStateM
                         const Icon(Icons.warning_amber_rounded, color: Colors.redAccent, size: 30),
                       Text(
                         isDefeated ? "DEAD" : "${widget.life}",
-                        style: TextStyle(
+                        style: GoogleFonts.cinzelDecorative(
                           color: isAtDeathsDoor || isDefeated ? Colors.red : Colors.white,
                           fontSize: isDefeated ? 60 : 100,
                           fontWeight: FontWeight.bold,
@@ -270,7 +271,7 @@ class _PlayerCounterState extends State<PlayerCounter> with TickerProviderStateM
                       padding: const EdgeInsets.only(top: 100),
                       child: Text(
                         currentChange > 0 ? "+$currentChange" : "$currentChange",
-                        style: TextStyle(
+                        style: GoogleFonts.cinzelDecorative(
                           color: currentChange > 0 ? Colors.greenAccent : Colors.redAccent,
                           fontSize: 40,
                           fontWeight: FontWeight.bold,
