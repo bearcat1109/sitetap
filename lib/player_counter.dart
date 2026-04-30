@@ -43,6 +43,14 @@ class _PlayerCounterState extends State<PlayerCounter> with TickerProviderStateM
   bool showDamageIndicator = false;
   int currentChange = 0;
   final damageAccumulator = DamageAccumulator();
+
+  // For affinity trackers
+  List<int> affinities = [0, 0, 0, 0]; // Earth, Fire, Water, Air
+  void _updateAffinity(int index, int delta) {
+    setState(() {
+      affinities[index] = (affinities[index] + delta).clamp(0, 9);
+    });
+  }
   
   // Particle system state
   List<HealingParticle> particles = [];
@@ -281,6 +289,22 @@ class _PlayerCounterState extends State<PlayerCounter> with TickerProviderStateM
                     ),
                   ),
                 ),
+
+              // Inside the Stack in player_counter.dart
+              Positioned(
+                bottom: 35,
+                left: 0,
+                right: 0,
+                child: Container(
+                  height: 50,
+                  color: Colors.black45,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: List.generate(4, (index) => _buildAffinityItem(index)),
+                  ),
+                ),
+              ),  
+
             ],
           ),
         ),
@@ -321,6 +345,41 @@ class _PlayerCounterState extends State<PlayerCounter> with TickerProviderStateM
       ],
     );
   }
+
+
+    // For affinity counter
+    Widget _buildAffinityItem(int index) {
+      final List<Color> elementColors = [
+        Colors.brown,  // Earth
+        Colors.orange, // Fire
+        Colors.blue,   // Water
+        Colors.white70 // Air
+      ];
+
+      return GestureDetector(
+        onTap: () => _updateAffinity(index, 1),
+        onLongPress: () => _updateAffinity(index, -1),
+        child: Container(
+          width: 60,
+          decoration: BoxDecoration(
+            border: Border(top: BorderSide(color: elementColors[index], width: 3)),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                '${affinities[index]}',
+                style: TextStyle(
+                  color: elementColors[index],
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
 }
 
 // For healing animation
@@ -374,3 +433,5 @@ class ParticlePainter extends CustomPainter {
   @override
   bool shouldRepaint(CustomPainter oldDelegate) => true;
 }
+
+

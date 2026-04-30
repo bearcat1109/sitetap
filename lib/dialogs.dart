@@ -283,7 +283,8 @@ class InfoDialog extends StatelessWidget {
         child: Text(
           'SiteTap is a life counter app for Sorcery..\n\n'
           'All images and cards used do not belong to me. They are property of Curiosa Games.\n\n'
-              
+          'Tap each side of the life counter to take life up and down. The affinity counters at the bottom of each player area tap to go up, and long press to go down!\n\n'    
+          'Player name and Avatars can be changed by tapping the player name area.'
         ),
       ),
       actions: [
