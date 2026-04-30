@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'statistics_manager.dart';
 import 'models.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'dart:math';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 
 // First time welcome dialog
 class FirstTimeWelcomeDialog extends StatelessWidget {
@@ -564,6 +568,97 @@ class _StatisticsDialogState extends State<StatisticsDialog> {
           onPressed: widget.onDismissRequest,
           child: const Text('Close'),
         ),
+      ],
+    );
+  }
+}
+
+// Dice roll screen
+class DiceRollDialog extends StatefulWidget {
+  const DiceRollDialog({super.key});
+
+  @override
+  State<DiceRollDialog> createState() => _DiceRollDialogState();
+}
+
+class _DiceRollDialogState extends State<DiceRollDialog> {
+  String _result = "Roll for Initiative!";
+  final Random _random = Random();
+
+  void _roll(String type) {
+    setState(() {
+      if (type == 'Coin') {
+        _result = _random.nextBool() ? "HEADS" : "TAILS";
+      } else if (type == 'D6') {
+        _result = "🎲  ${_random.nextInt(6) + 1}";
+      } else if (type == 'D20') {
+        _result = "✨  ${_random.nextInt(20) + 1}";
+      }
+    });
+  }
+
+  
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      backgroundColor: Colors.grey[900],
+      title: Text("Roll a Die", 
+        style: GoogleFonts.cinzelDecorative(color: Colors.amber, fontSize: 24),
+        textAlign: TextAlign.center,
+      ),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: Colors.black26,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: Colors.amber.withOpacity(0.3)),
+            ),
+            child: Text(_result,
+              style: GoogleFonts.cinzelDecorative(
+                color: Colors.white,
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ),
+          const SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              _diceButton("Coin", Icons.monetization_on),
+              _diceButton("D6", Icons.casino),
+              _diceButton("D20", Icons.auto_awesome),
+            ],
+          ),
+        ],
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text("CLOSE", style: TextStyle(color: Colors.white54)),
+        ),
+      ],
+    );
+  }
+
+  Widget _diceButton(String label, IconData icon) {
+    return Column(
+      children: [
+        IconButton(
+          // Swap out the Icons.auto_awesome for the FontAwesome d20
+          icon: FaIcon(
+            label == "D20" ? FontAwesomeIcons.diceD20 : icon, 
+            color: Colors.amber, 
+            size: 36,
+          ),
+          onPressed: () => _roll(label),
+        ),
+        Text(label, style: const TextStyle(color: Colors.white70, fontSize: 12)),
       ],
     );
   }

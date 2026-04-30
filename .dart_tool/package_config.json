@@ -122,6 +122,12 @@
       "languageVersion": "3.8"
     },
     {
+      "name": "font_awesome_flutter",
+      "rootUri": "file:///Users/gabrielberres/.pub-cache/hosted/pub.dev/font_awesome_flutter-10.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
       "name": "glob",
       "rootUri": "file:///Users/gabrielberres/.pub-cache/hosted/pub.dev/glob-2.1.3",
       "packageUri": "lib/",

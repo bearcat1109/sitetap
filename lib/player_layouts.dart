@@ -27,6 +27,13 @@ Widget buildControlButton({
   );
 }
 
+void _showDiceDialog(BuildContext context) {
+  showDialog(
+    context: context,
+    builder: (context) => const DiceRollDialog(),
+  );
+}
+
 class OnePlayerLayout extends StatefulWidget {
   final int? initiativePlayer;
   final Function(int) onInitiativeClaimed;
@@ -92,17 +99,16 @@ class _OnePlayerLayoutState extends State<OnePlayerLayout> {
                   onTap: widget.onShowPlayerCount,
                 ),
                 buildControlButton(
-                  icon: Icons.timer,
-                  color: _showTimer ? Colors.blue : Colors.white,
-                  onTap: () => setState(() => _showTimer = !_showTimer),
-                ),
-                buildControlButton(
                   icon: Icons.info,
                   onTap: () => showDialog(
                     context: context,
                     builder: (context) => InfoDialog(onDismissRequest: () => Navigator.pop(context)),
                   ),
                 ),
+                buildControlButton(
+                  icon: Icons.casino, color: Colors.amber,
+                  onTap: () => _showDiceDialog(context),
+                )
               ],
             ),
           ),
@@ -244,6 +250,10 @@ class _TwoPlayerLayoutState extends State<TwoPlayerLayout> {
                     builder: (context) => InfoDialog(onDismissRequest: () => Navigator.pop(context)),
                   ),
                 ),
+                buildControlButton(
+                  icon: Icons.casino, color: Colors.amber,
+                  onTap: () => _showDiceDialog(context),
+                )
               ],
             ),
           ),
@@ -353,6 +363,10 @@ class _ThreePlayerLayoutState extends State<ThreePlayerLayout> {
                     context: context,
                     builder: (context) => InfoDialog(onDismissRequest: () => Navigator.pop(context)),
                   ),),
+          IconButton(
+            icon: const Icon(Icons.casino, color: Colors.amber),
+            onPressed: () => _showDiceDialog(context),
+          ),        
         ],
       ),
     );
@@ -427,18 +441,25 @@ class _FourPlayerLayoutState extends State<FourPlayerLayout> {
 
   Widget _buildControlBar() {
     return Container(
-      height: 40,
+      height: 50,
       color: Colors.black,
-      child: Center(
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            IconButton(icon: const Icon(Icons.refresh, size: 20, color: Colors.white), 
-              onPressed: () => setState(() => lives = [20, 20, 20, 20])),
-            IconButton(icon: const Icon(Icons.people, size: 20, color: Colors.white), 
-              onPressed: widget.onShowPlayerCount),
-          ],
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          IconButton(icon: const Icon(Icons.refresh, color: Colors.white), 
+            onPressed: () => setState(() => lives = [20, 20, 20])),
+          IconButton(icon: const Icon(Icons.people, color: Colors.white), 
+            onPressed: widget.onShowPlayerCount),
+          IconButton(icon: const Icon(Icons.info, color: Colors.white), 
+            onPressed: () => showDialog(
+                    context: context,
+                    builder: (context) => InfoDialog(onDismissRequest: () => Navigator.pop(context)),
+                  ),),
+          IconButton(
+            icon: const Icon(Icons.casino, color: Colors.amber),
+            onPressed: () => _showDiceDialog(context),
+          ),        
+        ],
       ),
     );
   }
