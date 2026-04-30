@@ -346,40 +346,49 @@ class _PlayerCounterState extends State<PlayerCounter> with TickerProviderStateM
     );
   }
 
-
-    // For affinity counter
-    Widget _buildAffinityItem(int index) {
+  // For affinity counters
+      Widget _buildAffinityItem(int index) {
       final List<Color> elementColors = [
-        Colors.brown,  // Earth
-        Colors.orange, // Fire
-        Colors.blue,   // Water
-        Colors.white70 // Air
+        const Color(0xFF795548), // Earth
+        const Color(0xFFFF5722), // Fire
+        const Color(0xFF2196F3), // Water
+        const Color(0xFFE0E0E0)  // Air
       ];
 
-      return GestureDetector(
-        onTap: () => _updateAffinity(index, 1),
-        onLongPress: () => _updateAffinity(index, -1),
-        child: Container(
-          width: 60,
-          decoration: BoxDecoration(
-            border: Border(top: BorderSide(color: elementColors[index], width: 3)),
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                '${affinities[index]}',
-                style: TextStyle(
-                  color: elementColors[index],
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18,
-                ),
+      return Expanded(
+        child: GestureDetector(
+          onTap: () => _updateAffinity(index, 1),
+          onLongPress: () => _updateAffinity(index, -1),
+          behavior: HitTestBehavior.opaque,
+          child: Container(
+            decoration: BoxDecoration(
+              border: Border(
+                // Top border for element color
+                top: BorderSide(color: elementColors[index], width: 3),
+                // Left border for the divider (only if it's not the first item)
+                left: index > 0 
+                    ? const BorderSide(color: Colors.white10, width: 0.5) 
+                    : BorderSide.none,
               ),
-            ],
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  '${affinities[index]}',
+                  style: GoogleFonts.cinzelDecorative(
+                    color: elementColors[index],
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16, 
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       );
     }
+   
 }
 
 // For healing animation

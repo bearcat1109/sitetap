@@ -149,6 +149,7 @@ class TwoPlayerLayout extends StatefulWidget {
 }
 
 class _TwoPlayerLayoutState extends State<TwoPlayerLayout> {
+
   int topLife = 20;
   int bottomLife = 20;
   int topAvatarId = 1;
@@ -268,6 +269,171 @@ class _TwoPlayerLayoutState extends State<TwoPlayerLayout> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+
+class ThreePlayerLayout extends StatefulWidget {
+  final int? initiativePlayer;
+  final Function(int) onInitiativeClaimed;
+  final VoidCallback onShowPlayerCount;
+
+  const ThreePlayerLayout({
+    super.key,
+    required this.initiativePlayer,
+    required this.onInitiativeClaimed,
+    required this.onShowPlayerCount,
+  });
+
+  @override
+  State<ThreePlayerLayout> createState() => _ThreePlayerLayoutState();
+}
+
+class _ThreePlayerLayoutState extends State<ThreePlayerLayout> {
+  List<int> lives = [20, 20, 20];
+  List<int> avatarIds = [1, 2, 3];
+  List<String> names = ["Player 1", "Player 2", "Player 3"];
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        // Top Player (Rotated)
+        Expanded(
+          flex: 2,
+          child: _buildCounter(0, isTop: true),
+        ),
+        // Central Control Bar
+        _buildControlBar(),
+        // Bottom Two Players (Side-by-Side)
+        Expanded(
+          flex: 2,
+          child: Row(
+            children: [
+              Expanded(child: _buildCounter(1, isTop: false)),
+              const VerticalDivider(width: 1, color: Colors.white24),
+              Expanded(child: _buildCounter(2, isTop: false)),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildCounter(int index, {required bool isTop}) {
+    return PlayerCounter(
+      isTopPlayer: isTop,
+      life: lives[index],
+      playerName: names[index],
+      avatarId: avatarIds[index],
+      playerId: index,
+      initiativePlayer: widget.initiativePlayer,
+      onInitiativeClaimed: widget.onInitiativeClaimed,
+      onLifeChange: (val) => setState(() => lives[index] = val),
+      onAvatarChange: (id) => setState(() => avatarIds[index] = id),
+      onNameChange: (name) => setState(() => names[index] = name),
+    );
+  }
+
+  Widget _buildControlBar() {
+    return Container(
+      height: 50,
+      color: Colors.black,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          IconButton(icon: const Icon(Icons.refresh, color: Colors.white), 
+            onPressed: () => setState(() => lives = [20, 20, 20])),
+          IconButton(icon: const Icon(Icons.people, color: Colors.white), 
+            onPressed: widget.onShowPlayerCount),
+        ],
+      ),
+    );
+  }
+}
+
+class FourPlayerLayout extends StatefulWidget {
+  final int? initiativePlayer;
+  final Function(int) onInitiativeClaimed;
+  final VoidCallback onShowPlayerCount;
+
+  const FourPlayerLayout({
+    super.key,
+    required this.initiativePlayer,
+    required this.onInitiativeClaimed,
+    required this.onShowPlayerCount,
+  });
+
+  @override
+  State<FourPlayerLayout> createState() => _FourPlayerLayoutState();
+}
+
+class _FourPlayerLayoutState extends State<FourPlayerLayout> {
+  List<int> lives = [20, 20, 20, 20];
+  List<int> avatarIds = [1, 2, 3, 4];
+  List<String> names = ["P1", "P2", "P3", "P4"];
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        // Top Row (P1 & P2 - Rotated)
+        Expanded(
+          child: Row(
+            children: [
+              Expanded(child: _buildCounter(0, isTop: true)),
+              const VerticalDivider(width: 1, color: Colors.white24),
+              Expanded(child: _buildCounter(1, isTop: true)),
+            ],
+          ),
+        ),
+        // Middle Control Bar
+        _buildControlBar(),
+        // Bottom Row (P3 & P4 - Normal)
+        Expanded(
+          child: Row(
+            children: [
+              Expanded(child: _buildCounter(2, isTop: false)),
+              const VerticalDivider(width: 1, color: Colors.white24),
+              Expanded(child: _buildCounter(3, isTop: false)),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildCounter(int index, {required bool isTop}) {
+    return PlayerCounter(
+      isTopPlayer: isTop,
+      life: lives[index],
+      playerName: names[index],
+      avatarId: avatarIds[index],
+      playerId: index,
+      initiativePlayer: widget.initiativePlayer,
+      onInitiativeClaimed: widget.onInitiativeClaimed,
+      onLifeChange: (val) => setState(() => lives[index] = val),
+      onAvatarChange: (id) => setState(() => avatarIds[index] = id),
+      onNameChange: (name) => setState(() => names[index] = name),
+    );
+  }
+
+  Widget _buildControlBar() {
+    return Container(
+      height: 40,
+      color: Colors.black,
+      child: Center(
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            IconButton(icon: const Icon(Icons.refresh, size: 20, color: Colors.white), 
+              onPressed: () => setState(() => lives = [20, 20, 20, 20])),
+            IconButton(icon: const Icon(Icons.people, size: 20, color: Colors.white), 
+              onPressed: widget.onShowPlayerCount),
+          ],
+        ),
       ),
     );
   }

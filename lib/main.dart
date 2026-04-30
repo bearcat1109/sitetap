@@ -153,20 +153,20 @@ class _MainScreenState extends State<MainScreen> {
           onInitiativeClaimed: _onInitiativeClaimed,
           onShowPlayerCount: _onReturnToWelcome,
         );
-      // case 3:
-      //   return ThreePlayerLayout(
-      //     key: const ValueKey('3players'),
-      //     initiativePlayer: initiativePlayer,
-      //     onInitiativeClaimed: _onInitiativeClaimed,
-      //     onShowPlayerCount: _onReturnToWelcome,
-      //   );
-      // case 4:
-      //   return FourPlayerLayout(
-      //     key: const ValueKey('4players'),
-      //     initiativePlayer: initiativePlayer,
-      //     onInitiativeClaimed: _onInitiativeClaimed,
-      //     onShowPlayerCount: _onReturnToWelcome,
-      //   );
+      case 3:
+        return ThreePlayerLayout(
+          key: const ValueKey('3players'),
+          initiativePlayer: initiativePlayer,
+          onInitiativeClaimed: _onInitiativeClaimed,
+          onShowPlayerCount: _onReturnToWelcome,
+        );
+      case 4:
+        return FourPlayerLayout(
+          key: const ValueKey('4players'),
+          initiativePlayer: initiativePlayer,
+          onInitiativeClaimed: _onInitiativeClaimed,
+          onShowPlayerCount: _onReturnToWelcome,
+        );
       // case 5:
       //   return FivePlayerLayout(
       //     key: const ValueKey('5players'),
