@@ -12,3 +12,5 @@ macOS/
 test/
 web/
 windows/
+android/key.properties
+key2.jks
