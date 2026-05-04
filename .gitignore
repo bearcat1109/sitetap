@@ -1,9 +1,14 @@
 /build/
 /.dart_tool/
-/ios/
 /linux/
 /macOS/
 /test/
 /web/
 /windows/
-/android/
+build/
+.dart_tool/
+linux/
+macOS/
+test/
+web/
+windows/
