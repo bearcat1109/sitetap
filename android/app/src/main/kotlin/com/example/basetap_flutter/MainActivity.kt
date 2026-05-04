@@ -1,4 +1,4 @@
-package com.example.basetap_flutter
+package com.bearcat.sitetap
 
 import io.flutter.embedding.android.FlutterActivity
 
