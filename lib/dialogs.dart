@@ -94,7 +94,7 @@ class _PlayerNameDialogState extends State<PlayerNameDialog> {
             // Leader selection
             Card(
               child: ListTile(
-                title: Text('Leader: ${selectedLeader?.name ?? "Unknown"}'),
+                title: Text('Avatar: ${selectedLeader?.name ?? "Unknown"}'),
                 leading: selectedLeader?.imagePath != null
                     ? CircleAvatar(
                   backgroundImage: AssetImage(selectedLeader!.imagePath),
@@ -103,7 +103,7 @@ class _PlayerNameDialogState extends State<PlayerNameDialog> {
                   },
                 )
                     : const CircleAvatar(
-                  child: Icon(Icons.person),
+                  
                 ),
                 onTap: () => _showLeaderSelector(context),
               ),
@@ -251,7 +251,7 @@ class _LeaderSelectorDialogState extends State<_LeaderSelectorDialog> {
                       onBackgroundImageError: (_, __) {
                         // Handle image loading error
                       },
-                      child: const Icon(Icons.person), // Fallback icon
+                      // child: const Icon(Icons.person), // Fallback icon
                     ),
                     selected: leader.id == widget.selectedLeaderId,
                     onTap: () => widget.onLeaderSelected(leader.id),
